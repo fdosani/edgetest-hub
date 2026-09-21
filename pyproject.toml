@@ -30,6 +30,9 @@ classifiers = [
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
 ]
 urls."Bug Tracker" = "https://github.com/capitalone/edgetest-hub/issues"
 urls."Documentation" = "https://capitalone.github.io/edgetest-hub"
@@ -91,6 +94,7 @@ include-package-data = true
 zip-safe = false
 
 [tool.setuptools.packages.find]
+include = ["edgetest_hub*"]
 
 [tool.setuptools.dynamic]
 version = { attr = "edgetest_hub.__version__" }
